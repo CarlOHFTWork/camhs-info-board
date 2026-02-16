@@ -35,11 +35,17 @@ button,input{font-family:inherit;}
 .upload-btn input{display:none;}
 .edit-banner{background:#FFF3E0;border:2px solid #ED8B00;border-radius:0 0 10px 10px;padding:10px 16px;margin-bottom:12px;display:flex;align-items:center;gap:8px;}
 .quote-bar{background:linear-gradient(135deg,#E8F4F8,#f0f7ff);border:1px solid #b8dae8;border-radius:12px;padding:12px 18px;margin-bottom:10px;display:flex;align-items:center;gap:10px;}
-.celeb-ribbon{display:flex;gap:8px;margin-bottom:10px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin;}
-.celeb-chip{flex-shrink:0;padding:5px 12px;border-radius:20px;font-size:11px;font-weight:600;white-space:nowrap;border:1px solid #CE93D8;background:#F3E5F5;color:#7B1FA2;}
-.celeb-chip.today{background:linear-gradient(135deg,#FFD700,#FFA000);border-color:#FF8F00;color:#4E2700;animation:pulse 2s infinite;}
-.celeb-chip .celeb-days{font-weight:400;opacity:0.8;font-size:10px;margin-left:3px;}
-@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+.celeb-list{background:#fff;border-radius:12px;padding:12px 16px;margin-bottom:10px;box-shadow:0 1px 5px rgba(0,0,0,0.05);}
+.celeb-list-title{font-size:11px;font-weight:700;color:#7B1FA2;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;}
+.celeb-item{display:flex;align-items:center;justify-content:space-between;padding:5px 0;border-bottom:1px solid #f5f0f8;}
+.celeb-item:last-child{border-bottom:none;}
+.celeb-item.today{background:linear-gradient(135deg,#FFF8E1,#FFECB3);margin:0 -8px;padding:5px 8px;border-radius:6px;border-bottom:none;}
+.celeb-left{display:flex;align-items:center;gap:8px;}
+.celeb-emoji{font-size:16px;width:24px;text-align:center;}
+.celeb-name{font-size:12px;font-weight:600;color:#231F20;}
+.celeb-name.today-name{color:#E65100;}
+.celeb-days-badge{font-size:10px;font-weight:600;padding:2px 8px;border-radius:10px;background:#F3E5F5;color:#7B1FA2;}
+.celeb-days-badge.today-badge{background:#FF8F00;color:#fff;}
 .notices{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
 .notice{display:flex;align-items:center;gap:5px;border-radius:8px;padding:6px 12px;font-size:11px;font-weight:600;}
 .notice-fire{background:#FFF3E0;border:1px solid #ED8B00;color:#b36b00;}
@@ -243,7 +249,7 @@ function loadFromGitHub(){
 function saveRotaToGitHub(data){
   toast("Saving rota to GitHub...","loading");
   var saveData=JSON.parse(JSON.stringify(data));
-  if(saveData.weekDates)saveData.weekDates=saveData.weekDates.map(function(d){return d?d.toISOString():null});
+  if(saveData.weekDates)saveData.weekDates=saveData.weekDates.map(function(d){if(!d)return null;if(d instanceof Date)return d.toISOString();if(typeof d==="string")return d;return new Date(d).toISOString();});
   ghWrite("data/rota.json",saveData,state.rotaSha).then(function(r){
     state.rotaSha=r.content.sha;toast("\u2705 Rota saved to GitHub","ok");
   }).catch(function(e){console.error(e);toast("\u274c Error saving rota","err");});
@@ -320,7 +326,6 @@ function render(){
   var s=state,h="";
   var d=s.isEditing&&s.editData?s.editData:s.data;
   var celebs=upcomingCelebs();
-  var xd=xmasDays();
   var quote=Q[doy()%Q.length];
 
   // SETUP SCREEN
@@ -367,12 +372,12 @@ function render(){
 
     if(s.isEditing){h+='<div class="edit-banner"><span style="font-size:18px">\u270f\ufe0f</span><div><div style="font-size:13px;font-weight:700;color:#b36b00">Edit Mode \u2014 Sick Cover / Changes</div><div style="font-size:11px;color:#b36b00">Change any name or phone number below, then click Save Changes.</div></div></div>';}
 
-    // CELEBRATION RIBBON
+    // CELEBRATION LIST
     if(celebs.length){
-      h+='<div class="celeb-ribbon">';
-      celebs.forEach(function(c){
+      h+='<div class="celeb-list"><div class="celeb-list-title">\ud83c\udf1f Upcoming Celebrations</div>';
+      celebs.slice(0,8).forEach(function(c){
         var label=c.isToday?"Today!":c.days===1?"Tomorrow":c.days+" days";
-        h+='<div class="celeb-chip'+(c.isToday?" today":"")+'">'+c.emoji+" "+esc(c.name)+'<span class="celeb-days">'+label+'</span></div>';
+        h+='<div class="celeb-item'+(c.isToday?" today":"")+'"><div class="celeb-left"><span class="celeb-emoji">'+c.emoji+'</span><span class="celeb-name'+(c.isToday?" today-name":"")+'">'+esc(c.name)+'</span></div><span class="celeb-days-badge'+(c.isToday?" today-badge":"")+'">'+label+'</span></div>';
       });
       h+='</div>';
     }
@@ -387,7 +392,6 @@ function render(){
       if(s.isEditing)h+='<div class="notice notice-meeting">\ud83d\udcc5 12:45 Meeting: <input value="'+esc(s.fridayMeeting)+'" oninput="state.fridayMeeting=this.value"></div>';
       else h+='<div class="notice notice-meeting">\ud83d\udcc5 12:45 Meeting: '+esc(s.fridayMeeting)+'</div>';
     }
-    h+='<div class="notice notice-xmas">\ud83c\udf84 '+xd+' days til Christmas</div>';
     h+='<div class="notice notice-static">\ud83d\udfe2 Green emergency bag \u2014 Clinic Room</div>';
     h+='</div>';
 
