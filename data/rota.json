@@ -1,11 +1,11 @@
 {
-  "weekLabel": "Week Commencing 16/02/2026",
+  "weekLabel": "Week Commencing 02/03/2026",
   "weekDates": [
-    "2026-02-16T00:00:00.000Z",
-    "2026-02-17T00:00:00.000Z",
-    "2026-02-18T00:00:00.000Z",
-    "2026-02-19T00:00:00.000Z",
-    "2026-02-20T00:00:00.000Z"
+    "2026-03-02T00:00:00.000Z",
+    "2026-03-03T00:00:00.000Z",
+    "2026-03-04T00:00:00.000Z",
+    "2026-03-05T00:00:00.000Z",
+    "2026-03-06T00:00:00.000Z"
   ],
   "opsLeadSNC": [
     {
@@ -41,25 +41,25 @@
   ],
   "opsLeadSaffron": [
     {
-      "name": "Lyuba Copestake",
+      "name": "Megan Green",
+      "phone": "07721 642653",
+      "backup": "",
+      "backupPhone": ""
+    },
+    {
+      "name": "Dorothy Dan Cooke",
+      "phone": "07748 147399",
+      "backup": "",
+      "backupPhone": ""
+    },
+    {
+      "name": "Alison Ritchie",
       "phone": "07789 855660",
       "backup": "",
       "backupPhone": ""
     },
     {
       "name": "Caroline Rumhungwe",
-      "phone": "07442 702758",
-      "backup": "",
-      "backupPhone": ""
-    },
-    {
-      "name": "Alison Ritchie",
-      "phone": "07748 147399",
-      "backup": "",
-      "backupPhone": ""
-    },
-    {
-      "name": "Carl Webb",
       "phone": "07350 422529",
       "backup": "",
       "backupPhone": ""
@@ -73,32 +73,32 @@
   ],
   "dutyDr": [
     {
-      "name": "Dr V Singaravelu",
-      "phone": "07768 815923",
-      "backup": "",
-      "backupPhone": ""
-    },
-    {
       "name": "Dr K Fenton",
       "phone": "07557 807647",
       "backup": "",
       "backupPhone": ""
     },
     {
-      "name": "Dr B Abdalla",
-      "phone": "07721 716814",
+      "name": "Dr Z Noor",
+      "phone": "07721 736826",
       "backup": "",
       "backupPhone": ""
     },
     {
-      "name": "Dr M Addison",
-      "phone": "07789 004054",
+      "name": "Dr H Gosney",
+      "phone": "07721 389684",
       "backup": "",
       "backupPhone": ""
     },
     {
-      "name": "Dr D Carey",
-      "phone": "07871 244139   PERSONAL",
+      "name": "Dr J O'Brien",
+      "phone": "07999 494847",
+      "backup": "",
+      "backupPhone": ""
+    },
+    {
+      "name": "Dr E Batista",
+      "phone": "07810 139466",
       "backup": "",
       "backupPhone": ""
     }
@@ -129,28 +129,8 @@
       "data": [
         {
           "am": {
-            "name": "Narki Nartey",
-            "phone": "07436 053589"
-          },
-          "pm": {
-            "name": "Peter Atkinson",
-            "phone": "07552 881302"
-          }
-        },
-        {
-          "am": {
-            "name": "Tshepi Pilatwe",
-            "phone": "07503 194478"
-          },
-          "pm": {
-            "name": "Peter Atkinson",
-            "phone": "07552 881302"
-          }
-        },
-        {
-          "am": {
-            "name": "Narki Nartey",
-            "phone": "07436 053589"
+            "name": "Kris Gach",
+            "phone": "07584 886145"
           },
           "pm": {
             "name": "Tshepi Pilatwe",
@@ -159,8 +139,8 @@
         },
         {
           "am": {
-            "name": "Shamel Shakespeare",
-            "phone": "07721 625169"
+            "name": "Tshepi Pilatwe",
+            "phone": "07503 194478"
           },
           "pm": {
             "name": "Narki Nartey",
@@ -169,12 +149,32 @@
         },
         {
           "am": {
-            "name": "Shamel Shakespeare",
-            "phone": "07721 625169"
+            "name": "Narki Nartey",
+            "phone": "07436 053589"
           },
           "pm": {
             "name": "Peter Atkinson",
             "phone": "07552 881302"
+          }
+        },
+        {
+          "am": {
+            "name": "Peter Atkinson",
+            "phone": "07552 881302"
+          },
+          "pm": {
+            "name": "Grace Chebe",
+            "phone": "07990 124756"
+          }
+        },
+        {
+          "am": {
+            "name": "Kris Gach",
+            "phone": "07584 886145"
+          },
+          "pm": {
+            "name": "Kris Gach",
+            "phone": "07584 886145"
           }
         }
       ]
@@ -194,26 +194,26 @@
           "backupPhone": ""
         },
         {
-          "name": "Claudia Forero Jurado",
-          "phone": "07584 187567",
+          "name": "Sue Beale",
+          "phone": "07884 764980",
           "backup": "",
           "backupPhone": ""
         },
         {
-          "name": "Mari Boylan",
-          "phone": "07423 79812",
+          "name": "Risiqat Oladejo",
+          "phone": "07353 104371",
+          "backup": "",
+          "backupPhone": ""
+        },
+        {
+          "name": "Cicely Arthur",
+          "phone": "07467 008324",
           "backup": "",
           "backupPhone": ""
         },
         {
           "name": "Annabelle Ward",
           "phone": "07584 234504",
-          "backup": "",
-          "backupPhone": ""
-        },
-        {
-          "name": "Gabby Minani",
-          "phone": "07585 329547",
           "backup": "",
           "backupPhone": ""
         }
@@ -233,26 +233,26 @@
           "backupPhone": ""
         },
         {
-          "name": "Rebecca Nicholls",
-          "phone": "07584 262096",
-          "backup": "",
-          "backupPhone": ""
-        },
-        {
-          "name": "Katherine Carter",
-          "phone": "07584 531135",
-          "backup": "",
-          "backupPhone": ""
-        },
-        {
           "name": "Abbie Steptowe",
           "phone": "07350 425932",
           "backup": "",
           "backupPhone": ""
         },
         {
+          "name": "Rebecca Nicholls",
+          "phone": "07584 262096",
+          "backup": "",
+          "backupPhone": ""
+        },
+        {
           "name": "Runy Brydges",
           "phone": "07741 117091",
+          "backup": "",
+          "backupPhone": ""
+        },
+        {
+          "name": "Asun Fierro",
+          "phone": "07795 676994",
           "backup": "",
           "backupPhone": ""
         }
@@ -267,32 +267,32 @@
       "duty": "buckscamhsedduty@oxfordhealth.nhs.uk",
       "data": [
         {
-          "name": "Kate Williamson",
-          "phone": "07775 801152",
-          "backup": "",
-          "backupPhone": ""
-        },
-        {
-          "name": "Elizabeth Templeman",
-          "phone": "07880 095435",
-          "backup": "",
-          "backupPhone": ""
-        },
-        {
-          "name": "Tamara Wallace",
-          "phone": "07765 373330",
-          "backup": "",
-          "backupPhone": ""
-        },
-        {
-          "name": "Kate Clatworthy",
-          "phone": "07760 827567",
+          "name": "Madeleine Irish",
+          "phone": "07920 383793",
           "backup": "",
           "backupPhone": ""
         },
         {
           "name": "Isobelle Birch",
           "phone": "07799 853928",
+          "backup": "",
+          "backupPhone": ""
+        },
+        {
+          "name": "Lucy Tozer",
+          "phone": "",
+          "backup": "",
+          "backupPhone": ""
+        },
+        {
+          "name": "Kate Williamson",
+          "phone": "07775 801152",
+          "backup": "",
+          "backupPhone": ""
+        },
+        {
+          "name": "Tamara Wallace",
+          "phone": "07765 373330",
           "backup": "",
           "backupPhone": ""
         }
@@ -312,26 +312,26 @@
           "backupPhone": ""
         },
         {
-          "name": "Lyuba Copestake",
-          "phone": "07442 702758",
-          "backup": "",
-          "backupPhone": ""
-        },
-        {
-          "name": "Beth Angell",
-          "phone": "07899 675893",
-          "backup": "",
-          "backupPhone": ""
-        },
-        {
           "name": "Wendy Franza",
           "phone": "07879 808568",
           "backup": "",
           "backupPhone": ""
         },
         {
-          "name": "Fahreen Walji",
-          "phone": "Will add on teams channel",
+          "name": "Hannah Hook",
+          "phone": "07810 654686",
+          "backup": "",
+          "backupPhone": ""
+        },
+        {
+          "name": "Rebecca Bolam",
+          "phone": "07909 925579",
+          "backup": "",
+          "backupPhone": ""
+        },
+        {
+          "name": "Alice Wooding",
+          "phone": "by email",
           "backup": "",
           "backupPhone": ""
         }
@@ -345,8 +345,20 @@
       "email": "buckscamhsadmin@oxfordhealth.nhs.uk",
       "data": [
         {
+          "name": "Jo Mansfield",
+          "phone": "07990 139459",
+          "backup": "",
+          "backupPhone": ""
+        },
+        {
           "name": "Merry Wright",
           "phone": "07350 426925",
+          "backup": "",
+          "backupPhone": ""
+        },
+        {
+          "name": "Suzanne McKeown",
+          "phone": "07767 474458",
           "backup": "",
           "backupPhone": ""
         },
@@ -357,20 +369,8 @@
           "backupPhone": ""
         },
         {
-          "name": "Esther Sarquah",
-          "phone": "",
-          "backup": "",
-          "backupPhone": ""
-        },
-        {
           "name": "Heather Mckenzie",
           "phone": "07919 485330",
-          "backup": "",
-          "backupPhone": ""
-        },
-        {
-          "name": "Jo Mansfield",
-          "phone": "07990 139459",
           "backup": "",
           "backupPhone": ""
         }
@@ -384,14 +384,8 @@
       "email": "buckseatingdisorderservice@oxfordhealth.nhs.uk",
       "data": [
         {
-          "name": "Megan Reay",
-          "phone": "07350 458361",
-          "backup": "",
-          "backupPhone": ""
-        },
-        {
-          "name": "Phoebe Pearson Hall",
-          "phone": "07557 139 483",
+          "name": "Colin Bressington",
+          "phone": "07917 923050",
           "backup": "",
           "backupPhone": ""
         },
@@ -402,14 +396,20 @@
           "backupPhone": ""
         },
         {
-          "name": "Christina Fossum",
-          "phone": "07557 682247",
+          "name": "Amy Lunn",
+          "phone": "07721 625447",
           "backup": "",
           "backupPhone": ""
         },
         {
-          "name": "Colin Bressington",
-          "phone": "07917 923050",
+          "name": "Selin Sen",
+          "phone": "07501 024005",
+          "backup": "",
+          "backupPhone": ""
+        },
+        {
+          "name": "Christina Fossum",
+          "phone": "07557 682247",
           "backup": "",
           "backupPhone": ""
         }
@@ -423,8 +423,8 @@
       "email": "buckscamhsadmin@oxfordhealth.nhs.uk",
       "data": [
         {
-          "name": "Clare Sidwell",
-          "phone": "07826 951557",
+          "name": "Debbie Keep",
+          "phone": "07468 367886",
           "backup": "",
           "backupPhone": ""
         },
@@ -441,8 +441,8 @@
           "backupPhone": ""
         },
         {
-          "name": "Debbie Keep",
-          "phone": "07468 367 886",
+          "name": "Clare Sidwell",
+          "phone": "07826 951557",
           "backup": "",
           "backupPhone": ""
         },
